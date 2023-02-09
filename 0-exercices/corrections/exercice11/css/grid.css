@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(13, minmax(50px, 1fr));
+  gap: 2px;
+}
+
+div {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+div:first-child {
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+div:nth-of-type(2) {
+  grid-row: 1 / span 3;
+  background-color: #d3d3d3;
+}
+
+div:first-child,
+div:nth-of-type(3) {
+  background-color: #808080;
+}
+
+div:nth-of-type(3) {
+  grid-column: 3;
+  grid-row: 1 / -1;
+}
+
+header {
+  display: none;
+}
