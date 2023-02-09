@@ -7,9 +7,12 @@ Les couleurs :
 - Bleu foncé : `#001f33`
 
 ---
+
 ## Maquette desktop
 
 ![maquette4](./layout/m4.png)
+
+---
 
 ## Maquette mobile
 
