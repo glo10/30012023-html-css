@@ -1,0 +1,47 @@
+* {
+  /*
+  Width = taille élément + border + padding + margin
+  avec la valeur par défaut content-box au width viennent s'ajouter border, padding et margin
+    donc on dépasse la valeur du width indiqué
+    votre élément passera à la ligne s'il n'a plus suffisamment d'espace pour se positionner
+  */
+  box-sizing: border-box;
+}
+
+img {
+  padding: 10px;
+  width: 48px;
+  margin-left: 10px;
+}
+
+main {
+  display: grid;
+  gap: 40px 1px;
+  grid-template-rows: 50px repeat(2, 150px); /* 3 lignes : 50px puis 2 fois 150px donc 2 colonnes de 150px chacune*/
+  grid-template-columns: repeat(4, 1fr); /* 4 fois l'enchainement 1fr donc 4 colonnes avec des dimensions égales*/
+}
+
+header {
+  grid-row-start: 1;
+  /*grid-row-end: 2; optionnel, par défaut un élement dans le grid occupe une cellule (colonne * ligne) */
+  /* par défaut le remplissage s'effectue par rapport à la première cellule disponible et dans les directions haut vers le bas et gauche vers la droite*/
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+div {
+  /*
+  Pour compenser le gap de 40px entre chaque ligne
+  On décale nos divs de 35px vers le haut
+  */
+  position: relative;
+  bottom: 35px;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #2d2d2d;
+  text-align: center;
+  /* pour aligner un élément de type block verticalement
+  il faut donner à line-height la même dimension que la valeur de la propriété height
+  */
+  line-height: 150px; 
+}

@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+  width : calc(25% - 7px);
+  background-color: #2d2d2d;
+  text-align: center;
+  height: 150px;
+  color: #fff;
+  line-height: 150px; 
+  margin: 3px 2px 50px 2px;
+}
