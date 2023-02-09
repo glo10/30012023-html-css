@@ -12,4 +12,4 @@
 
 ## Maquette Desktop correspondante
 
-![maquette2_desktop](./layout/m2.png)
+![maquette3_desktop](./layout/m3.png)
